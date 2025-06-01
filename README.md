@@ -116,7 +116,7 @@ eksctl create cluster \
 kubectl get nodes
 ```
 
-・Kubernetesマニフェストを適用
+・Kubernetesマニフェストを適用  
 frontend-deployment.yaml,backend-deployment.yamlを作成
 ```
 ExpireNotifyApp/
