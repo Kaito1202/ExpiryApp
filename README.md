@@ -45,7 +45,7 @@ ExpireNotifyApp/
 ・docker-compose.yml を作成  
 ・docker desktop起動  
 ・docker起動  
-    プロジェクトルート（ExpireNotifyApp/）で以下を実行：
+    プロジェクトルート（ExpireNotifyApp/）で以下を実行：  
     ※ ここでdocker-compose upを実行してローカルでビルドした場合、armベースのノードが作成され、後にEKSにpush後ビルドした時にt3インスタンス(amdベース)と互換性がないためエラーとなる。ローカルでamdベースでビルドしておく必要がある。
 ```
 # React（frontend）
@@ -61,7 +61,7 @@ docker run -p 3000:3000 expiry-tracker-frontend
 # バックエンド
 docker run -p 3001:3001 expiry-tracker-backend
 ```
-• http://localhost:3000 → Reactアプリ
+• http://localhost:3000 → Reactアプリ  
 • http://localhost:3001/notify → Express通知API（LINE通知が飛ぶ）
 
 ## ECR (Amazon Elastic Container Registry) にDockerイメージをPushする
@@ -142,5 +142,5 @@ kubectl get services
 
 ・エラーが起きている際はPodの詳細ログを見る
 ```
-kubectl describe pod backend-554b76f4f4-jlt6p
+kubectl describe pod <Pod名>
 ```
