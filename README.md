@@ -19,8 +19,8 @@ npm install -D typescript ts-node @types/express
 npx tsc --init
 ```
 
-・src/server.tsを書く 
-・ .env の中身（LINEコンソールから取得）  
+・src/server.tsを書く  
+・ .env の中身（LINEコンソールから取得）    
 ・サーバーの起動 
 
 ```
