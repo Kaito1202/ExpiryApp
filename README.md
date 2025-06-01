@@ -19,9 +19,10 @@ npm install -D typescript ts-node @types/express
 npx tsc --init
 ```
 
-・src/server.tsを書く
-・ .env の中身（LINEコンソールから取得）
-・サーバーの起動
+・src/server.tsを書く <br>  
+・ .env の中身（LINEコンソールから取得）  
+・サーバーの起動 <br>
+
 ```
 npx ts-node src/server.ts
 ```
@@ -41,18 +42,11 @@ ExpireNotifyApp/
 │   └── Dockerfile
 └── docker-compose.yml   ← 両者を起動する設定
 ```
-・ExpireNotifyApp/
-├── expiry-tracker/      ← Reactフロントエンド
-│   └── Dockerfile
-├── backend/             ← Express + LINE通知
-│   └── Dockerfile
-└── docker-compose.yml   ← 両者を起動する設定
-
 ・docker-compose.yml を作成
 
 ・docker起動
-docker desktop起動
-プロジェクトルート（ExpireNotifyApp/）で以下を実行：
+・docker desktop起動
+・プロジェクトルート（ExpireNotifyApp/）で以下を実行：
 ```
 docker-compose up --build
 ```
